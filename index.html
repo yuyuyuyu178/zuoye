@@ -1,0 +1,637 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+        	margin:0;
+        	padding:0;
+        }
+        a {
+        	text-decoration:none;
+        }
+        li {
+        	list-style:none;
+        }
+        .clear:after{
+        content:"";
+        height:0;
+        display:block;
+        clear:both;
+       }
+       .header-top{
+         height:101px;
+         background:white;
+       }
+       .container{
+        width:1200px;
+        margin:0 auto;
+        position:relative;
+       }
+       .logobig{
+        font-size:40px;
+        font-family:Microsoft YaHei;
+        font-weight:bold;
+        color:rgba(0,164,255,1);
+        display:inline-block;
+        float:left;
+        padding-top:25px;
+        padding-right:79px;
+       }
+       .nav1{
+        float:left;
+        margin-top:42px;
+       }
+       .nav1 li{
+       float:left;
+       }
+       .nav1 a.small{
+       display:inline-block;
+       width:54px;
+       line-height:18px;
+       color:black;
+       text-align:center;
+       font-size:18px;
+       font-family:Microsoft YaHei;
+       font-weight:400;
+       color:rgba(5,5,5,1);
+       padding-bottom:10px;
+       }
+       .nav1 a.big{
+       display:inline-block;
+       width:90px;
+       line-height:18px;
+       color:black;
+       text-align:center;
+       font-size:18px;
+       font-family:Microsoft YaHei;
+       font-weight:400;
+       color:rgba(5,5,5,1);
+       padding-bottom:10px;
+       }
+       .nav1 a:hover{
+        color:black;
+        border-bottom:2px solid rgba(0,164,255,1);
+       }
+       .search{
+        width:361px;
+        height:40px;
+        border:1px solid rgba(0,164,255,1);
+        float:right;
+        margin-top:31px;
+       }
+       .sou{
+        width:50px;
+        height:40px;
+        padding-top:31px;
+        padding-right:31px;
+        float:right;
+       }
+       .suo{
+        width:19px;
+        height:19px;
+        position:absolute;
+        top:42px;
+        left:1064px;
+       }
+       .geren{
+       font-size:14px;
+       font-family:Microsoft YaHei;
+       font-weight:400;
+       color:rgba(102,102,102,1);
+       float:right;
+       margin-top:44px;
+       padding-right:12px;
+       }
+       .header{
+        height:420px;
+        background:rgba(28,3,108,1);
+        position:relative;
+        margin-bottom:8px;
+       }
+       .banner2{
+        width:1200px;
+        height:420px;
+       }
+       .qianduan{
+        width:190px;
+        height:420px;
+        background:rgba(0,0,0,0.3); 
+        position:absolute;
+        top:0px;
+       } 
+       .nav2{
+        float:left;
+        padding-top:15px;
+        padding-left:20px;
+       }
+       .nav2 li{
+        float:left;
+        width:190px;
+        font-size:14px;
+        font-family:Microsoft YaHei;
+        font-weight:400;
+        line-height:44px;
+       }
+       .nav2 a{
+        color:white;
+       }
+       .jiantou{
+        float:right;
+        padding-right:21px;
+        line-height:44px;
+       }
+       .nav2 a:hover{
+        color:#00B4FF;
+       }
+       .header-bottom{
+        width:1200px;
+        height:60px;
+        background:rgba(255,255,255,1);
+        box-shadow:0px 2px 3px 0px rgba(118,118,118,0.2);
+        margin:0 auto;
+       }
+       .jingpin{
+        width:130px;
+        padding-left:34px;
+        font-size:16px;
+        font-family:Microsoft YaHei;
+        font-weight:bold;
+        color:rgba(0,164,255,1);
+        line-height:18px;
+        display:inline-block;
+        float:left;
+        padding-top:21px;
+       }
+       .nav3{
+        float:left;
+       }
+       .nav3 li{
+        width:130px;
+        height:16px;
+        float:left;
+        text-align:center;
+        border-left:1px solid rgba(191,191,191,1);
+        font-size:16px;
+        font-family:Microsoft YaHei;
+        display:inline-block;
+        margin-top:21px;
+        }
+       .nav3 a{
+        color:black;
+       }
+       .nav3 a:hover{
+        color:rgba(0,164,255,1);
+       }
+       .xingqv{
+        float:right;
+        padding-right:61px;
+        font-size:14px;
+        padding-top:21px;
+       }
+       .xingqv a{
+        color:rgba(0,164,255,1);
+       }
+       .tuijian{
+        font-size:20px;
+        font-family:Microsoft YaHei;
+        font-weight:400;
+        color:rgba(73,73,73,1);
+        float:left;
+        display:inline-block;
+        padding-top:37px;
+        padding-bottom:21px;
+        margin-right:291px;
+       }
+       .quanbu{
+       font-size:12px;
+       font-family:Microsoft YaHei;
+       font-weight:400;
+      
+       padding-top:44px;
+       float:right;
+       padding-right:31px;
+       display:inline-block;
+       }
+       .quanbu a{
+        color:rgba(165,165,165,1);
+       }
+      .nav4{
+        float:left;
+      }
+      .nav4 li{
+        width:228px;
+        height:270px;
+        background:rgba(255,255,255,1);
+        box-shadow:0px 2px 5px 0px rgba(118,118,118,0.5);
+        position:relative;
+        float:left;
+      }
+      .picture{
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:228px;
+        height:155px;
+      }
+      .wenzi{
+        width:185px;
+        height:34px;
+        font-size:14px;
+        font-family:Microsoft YaHei;
+        font-weight:400;
+        color:rgba(5,5,5,1);
+        line-height:20px;
+        position:absolute;
+        top:179px;
+        left:23px;
+      }
+      .chengzi{
+        color:#FF7C2D;
+        font-size:12px;
+        position:absolute;
+        top:231px;
+        left:23px;
+      }
+      .hui{
+        color:#606060;
+        font-size:12px;
+      }
+      .product1{
+        margin-bottom:15px;
+      }
+      .product2{
+        margin-bottom:15px;
+        margin-left:15px;
+      }
+      .product3{
+         margin-left:15px;
+      }
+      .nav5{
+        float:left;
+        padding-top:41px;
+      }
+      .nav5 li{
+       float:left;
+       display:inline-block;
+       width:90px;
+       text-align:center;
+       font-size:16px;
+       font-family:Microsoft YaHei;
+       font-weight:400;
+       
+      }
+      .nav5 a{
+        color:#868686;
+      }
+      .nav5 a:hover{
+        color:#00A4FF;
+      }
+      .niuren{
+        font-size:20px;
+        font-family:Microsoft YaHei;
+        font-weight:400;
+        color:rgba(73,73,73,1);
+        float:left;
+        padding-top:35px;
+        padding-bottom:33px;
+      }
+      .nav6{
+        float:left;
+      }
+      .biyebox{
+        width:471px;
+        height:320px;
+        position:relative;
+        float:left;
+        margin-bottom:73px;
+      }
+      .biyepicture{
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:471px;
+        height:320px;    
+      }
+      .biyeji{
+      font-size:30px;
+      font-family:Microsoft YaHei;
+      font-weight:bold;
+      color:rgba(249,225,3,1);
+      position:absolute;
+      top:99px;
+      left:25px;
+      }
+      .daini{
+      font-size:27px;
+      font-family:Microsoft YaHei;
+      color:white;
+      position:absolute;
+      top:134px;
+      left:25px;
+      }
+      .dianji{
+       font-size:13px;
+       font-family:Microsoft YaHei;
+      font-weight:400;
+      line-height:25px;
+      width:87px;
+      height:25px;
+      position:absolute;
+      top:173px;
+      left:28px;
+      text-align:center;
+      border:1px solid rgba(249,225,3,1);
+      }
+      .dianji a{
+       color:rgba(249,225,3,1);
+      }
+      .niurenbox{
+       width:228px;
+       height:320px;
+       background:rgba(255,255,255,1);
+       position:relative;
+       float:left;
+       margin-left:15px;
+       margin-bottom:73px;
+       background-color:#F3F5F7;
+    }
+      .niurenpicture{
+       position:absolute;
+       top:0px;
+       left:0px;
+       right:0px;
+       width:228px;
+       height:320px;
+    }
+    .jieshao{
+       width:228px;
+       height:122px;
+       background-color:black;
+       opacity:0.5;
+       position:absolute;
+       bottom:0px;
+       left:0px;
+       right:0px;
+    }
+    .laoshi{
+       font-size:18px;
+       font-family:Microsoft YaHei;
+       font-weight:400;
+       color:rgba(255,255,255,1);
+       position:absolute;
+       left:29px;
+       top:219px;
+    }
+    .zhiwei{
+      font-size:14px;
+      font-family:Microsoft YaHei;
+      font-weight:400;
+      color:rgba(255,255,255,1);
+    }
+    .shuoming{
+      width:175px;
+      height:53px;
+      font-size:12px;
+      font-family:Microsoft YaHei;
+      font-weight:400;
+      color:rgba(255,255,255,1);
+      line-height:20px;
+      position:absolute;
+      top:249px;
+      left:25px;
+    }
+    .bottom{
+      height:417px; 
+      background:rgba(255,255,255,1);
+      
+    }
+    .logosmall{
+      font-size:36px;
+      font-family:Microsoft YaHei;
+      font-weight:bold;
+      color:rgba(0,164,255,1);
+      line-height:21px;
+      
+      position:absolute;
+      top:124px;
+    }
+    .zhiliyv{
+      font-size:12px;
+      font-family:SimSun;
+      font-weight:400;
+      color:rgba(102,102,102,1);
+      line-height:18px;
+      
+      position:absolute;
+      top:195px;
+    }
+    .xiazai{
+      width:120px;
+      height:36px;
+      font-size:16px;
+      font-family:Microsoft YaHei;
+      font-weight:400;
+      line-height:36px;
+      position:absolute;
+      top:240px;
+      border:1px solid rgba(0,164,255,1);
+      text-align:center;
+    }
+    .xiazai a{
+      color:rgba(0,164,255,1);
+    }
+    .guanyv{
+      font-size:16px;
+      font-family:Microsoft YaHei;
+      font-weight:400;
+      color:rgba(51,51,51,1);
+      line-height:21px;
+      position:absolute;
+      top:129px;
+      left:646px;
+    }
+    .xinshou{
+      font-size:16px;
+      font-family:Microsoft YaHei;
+      font-weight:400;
+      color:rgba(51,51,51,1);
+      line-height:21px;
+      position:absolute;
+      top:130px;
+      left:871px;
+    }
+    .hezuo{
+      font-size:16px;
+      font-family:Microsoft YaHei;
+      font-weight:400;
+      color:rgba(51,51,51,1);
+      line-height:21px;
+      position:absolute;
+      top:130px;
+      left:1087px;
+    }
+    .nav71{
+      position:absolute;
+      top:161px;
+      left:871px;
+    }
+    .nav71 li{
+     font-size:12px;
+     font-family:SimSun;
+     font-weight:400;
+     line-height:21px;
+    }
+    .nav71 a{
+     color:rgba(51,51,51,1);
+    }
+    .nav72{
+      position:absolute;
+      top:161px;
+      left:647px;
+    }
+    .nav72 li{
+     font-size:12px;
+     font-family:SimSun;
+     font-weight:400;
+     line-height:21px;
+    }
+    .nav72 a{
+     color:rgba(51,51,51,1);
+    }
+    .nav73{
+      position:absolute;
+      top:161px;
+      left:1089px;
+    }
+    .nav73 li{
+     font-size:12px;
+     font-family:SimSun;
+     font-weight:400;
+     line-height:21px;
+    }
+    .nav73 a{
+     color:rgba(51,51,51,1);
+    }
+    .background{
+        background-color:#F3F5F7;
+    }
+    </style>
+</head>
+<body>
+    <div class="header-top">
+        <div class="container clear">
+            <a class="logobig">雪梨在线</a>
+            <ul class="nav1">
+                <li><a href="#" class="small">首页</a></li>
+                <li><a href="#" class="small">课程</a></li>
+                <li><a href="#" class="big">职业规划</a></li>
+            </ul>
+            <a href="#" class="geren">个人中心</a>
+            <a href="#"><img src="./juxing9.png" class="sou">
+            <img src="./search.png" class="suo"></a>
+            <input type="text" placeholder="&nbsp;&nbsp;&nbsp;输入关键词" class="search"/>
+        </div>
+    </div>
+    <div class="header">
+        <div class="container clear">
+            <img src="./banner2.png" class="banner2">
+            <div class="qianduan">
+                <ul class="nav2">
+                    <li><a href="#">前端开发<span class="jiantou">></span></a></li>
+                    <li><a href="#">后端开发<span class="jiantou">></span></a></li>
+                    <li><a href="#">移动开发<span class="jiantou">></span></a></li>
+                    <li><a href="#">人工智能<span class="jiantou">></span></a></li>
+                    <li><a href="#">商业预测<span class="jiantou">></span></a></li>
+                    <li><a href="#">云计算&大数据<span class="jiantou">></span></a></li>
+                    <li><a href="#">运维&从测试<span class="jiantou">></span></a></li>
+                    <li><a href="#">UI设计<span class="jiantou">></span></a></li>
+                    <li><a href="#">产品<span class="jiantou">></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="background">
+    <div class="header-bottom clear">
+        <p class="jingpin">精品推荐</p>
+        <ul class="nav3">
+            <li><a href="#">JQuery</li>
+            <li><a href="#">Spark</li>
+            <li><a href="#">MySQL</li>
+            <li><a href="#">JavaWeb</li>
+            <li><a href="#">MySQL</li>
+            <li><a href="#">JavaWeb</li>
+        </ul>
+        <p class="xingqv"><a href="#">修改兴趣</a></p>
+    </div>
+        <div class="container clear">
+            <p class="tuijian">精品推荐</p>
+            <p class="quanbu"><a href="#">查看全部</a></p>
+            <ul class="nav4">
+                <li class="product1"><img src="./tuceng133.png" class="picture"><p class="wenzi">Think PHP 5.0博客系统实战项目演练</p><span class="chengzi">高级<span class="hui">&nbsp;.&nbsp;1125人在学习</span></li>
+                <li class="product2"><img src="./tuceng135.png" class="picture"><p class="wenzi">Android网络图片加载框架详解</p><span class="chengzi">高级<span class="hui">&nbsp;.&nbsp;1125人在学习</span></li>
+                <li class="product2"><img src="./tuceng136.png" class="picture"><p class="wenzi">Angular 2最新框架+主流技术+项目实战</p><span class="chengzi">高级<span class="hui">&nbsp;.&nbsp;1125人在学习</span></li>
+                <li class="product2"><img src="./tuceng137.png" class="picture"><p class="wenzi">Android Hybrid APP开发实战 H5+原生！</p><span class="chengzi">高级<span class="hui">&nbsp;.&nbsp;1125人在学习</span></li>
+                <li class="product2"><img src="./tuceng137.png" class="picture"><p class="wenzi">Android Hybrid APP开发实战 H5+原生！</p><span class="chengzi">高级<span class="hui">&nbsp;.&nbsp;1125人在学习</span></li>
+                <li><img src="./tuceng133.png" class="picture"><p class="wenzi">Think PHP 5.0博客系统实战项目演练</p><span class="chengzi">高级<span class="hui">&nbsp;.&nbsp;1125人在学习</span></li>
+                <li class="product3"><img src="./tuceng135.png" class="picture"><p class="wenzi">Android网络图片加载框架详解</p><span class="chengzi">高级<span class="hui">&nbsp;.&nbsp;1125人在学习</span></li>
+                <li class="product3"><img src="./tuceng136.png" class="picture"><p class="wenzi">Angular 2最新框架+主流技术+项目实战</p><span class="chengzi">高级<span class="hui">&nbsp;.&nbsp;1125人在学习</span></li>
+                <li class="product3"><img src="./tuceng137.png" class="picture"><p class="wenzi">Android Hybrid APP开发实战 H5+原生！</p><span class="chengzi">高级<span class="hui">&nbsp;.&nbsp;1125人在学习</span></li>
+                <li class="product3"><img src="./tuceng137.png" class="picture"><p class="wenzi">Android Hybrid APP开发实战 H5+原生！</p><span class="chengzi">高级<span class="hui">&nbsp;.&nbsp;1125人在学习</span></li>
+        </div>
+        <div class="container clear">
+            <p class="tuijian">前端开发工程师</p>
+            <ul class="nav5">
+                <li><a href="#">热门</a></li>
+                <li><a href="#">初级</a></li>
+                <li><a href="#">中级</a></li>
+                <li><a href="#">高级</a></li>
+              </ul>
+            <p class="quanbu"><a href="#">查看全部</a></p>
+            <ul class="nav4">
+                <li><img src="./tuceng142.png" class="picture"><p class="wenzi">微软人工智能-数据分析平台</p><span class="chengzi">高级<span class="hui">&nbsp;.&nbsp;1125人在学习</span></li>
+                <li class="product3"><img src="./tuceng144.png" class="picture"><p class="wenzi">Unity Profiler入门</p><span class="chengzi">高级<span class="hui">&nbsp;.&nbsp;1125人在学习</span></li>
+                <li class="product3"><img src="./tuceng143.png" class="picture"><p class="wenzi">Cocos2d-x 引擎源码中的纹理优化</p><span class="chengzi">高级<span class="hui">&nbsp;.&nbsp;1125人在学习</span></li>
+                <li class="product3"><img src="./tuceng146.png" class="picture"><p class="wenzi">Kami2首页界面切换效果</p><span class="chengzi">高级<span class="hui">&nbsp;.&nbsp;1125人在学习</span></li>
+                <li class="product3"><img src="./tuceng145.png" class="picture"><p class="wenzi">Android Hybrid APP开发实战 H5+原生！</p><span class="chengzi">高级<span class="hui">&nbsp;.&nbsp;1125人在学习</span></li>
+        </div>
+        <div class="container clear">
+            <p class="niuren">牛人推荐</p>
+            <ul class="nav6">
+                <li class="biyebox"><img src="./tuceng149.png" class="biyepicture"><p class="biyeji">毕业季</p><p class="daini">带你华丽转身</p><p class="dianji"><a href="#">点击查看</a></p></li>
+                <li class="niurenbox"><img src="./20172124182104355.png" class="niurenpicture"><div class="jieshao"></div><p class="laoshi">闻老师&nbsp;&nbsp;&nbsp;<span class="zhiwei">大数据</span></p><p class="shuoming">高级互联网软件工程师，曾担任某物流公司CRM开发团队TL。多年JAVAEE、大数据领域研发······</p></li>
+                <li class="niurenbox"><img src="./20154025104058710.png" class="niurenpicture"><div class="jieshao"></div><p class="laoshi">汪老师&nbsp;&nbsp;&nbsp;<span class="zhiwei">前端</span></p><p class="shuoming">高级软件架构师，全栈开发，多年大型项目管理经验。对Web Components、Node.js······</p></li>
+                <li class="niurenbox"><img src="./20154325104317144.png" class="niurenpicture"><div class="jieshao"></div><p class="laoshi">江老师&nbsp;&nbsp;&nbsp;<span class="zhiwei">前端</span></p><p class="shuoming">多年软件开发经验和教学经验，精通html,css,js,asp.net等编程语言和数据库系统......</p></li>
+            </ul>
+        </div>
+    </div>
+        <div class="bottom">
+            <div class="container clear">
+                <p class="logosmall">雪梨在线</p>
+                <p class="zhiliyv">致力于普及中国最好的教育，与中国一流大学和机构合作提供在线课程。</p>
+                <p class="xiazai"><a href="#">下载APP</a></p>
+                <p class="guanyv">关于雪梨网</p>
+                <ul class="nav71">
+                    <li><a href="#">关于</a></li>
+                    <li><a href="#">管理团队</a></li>
+                    <li><a href="#">工作机会</a></li>
+                    <li><a href="#">客户服务</a></li>
+                    <li><a href="#">帮助</a></li>
+                </ul>
+              <p class="xinshou">新手指南</p>
+              <ul class="nav72">
+                  <li><a href="#">如何注册</a></li>
+                  <li><a href="#">如何选课</a></li>
+                  <li><a href="#">如何拿到毕业证</a></li>
+                  <li><a href="#">学分是什么</a></li>
+                  <li><a href="#">考试未通过怎么办</a></li>
+              </ul>
+              <p class="hezuo">合作伙伴</p>
+              <ul class="nav73">
+                  <li><a href="#">合作机构</a></li>
+                  <li><a href="#">合作导师</a></li>
+              </ul>
+            </div>
+        </div>
+</body>
+</html>
