@@ -74,26 +74,26 @@
         color:black;
         border-bottom:2px solid rgba(0,164,255,1);
        }
+       .form{
+       	float:right;
+       	margin-top:31px;
+       	margin-right:31px;
+       }
        .search{
-        width:361px;
-        height:40px;
+        width:333px;
+        height:42px;
         border:1px solid rgba(0,164,255,1);
-        float:right;
-        margin-top:31px;
+        float:left;
+        padding:13px;
        }
-       .sou{
-        width:50px;
-        height:40px;
-        padding-top:31px;
-        padding-right:31px;
-        float:right;
-       }
-       .suo{
-        width:19px;
-        height:19px;
-        position:absolute;
-        top:42px;
-        left:1064px;
+       .submit{
+       	 vertical-align:bottom;
+         float:left;
+         width:52px;
+         height:42px;
+         background:rgba(0,164,255,1) url(./fa-search.png) no-repeat center center;
+         border:none;
+         border:1px solid rgba(0,164,255,1);
        }
        .geren{
        font-size:14px;
@@ -108,12 +108,20 @@
         height:420px;
         background:rgba(28,3,108,1);
         position:relative;
-        
+       }
+       .banner{
+       	height:420px;
+       	position:relative;
+       }
+       .banner li{
+       	width:1200px;
+       	height:420px;
+        top:0;
+        left:0;
+        padding-left:21px;
        }
        .banner2{
-        width:1200px;
-        height:420px;
-        padding-left:21px;
+        background:url(./banner2.png) no-repeat center center;
        }
        .qianduan{
         width:190px;
@@ -531,14 +539,23 @@
                 <li><a href="#" class="big">职业规划</a></li>
             </ul>
             <a href="#" class="geren">个人中心</a>
-            <a href="#"><img src="./juxing9.png" class="sou">
-            <img src="./search.png" class="suo"></a>
-            <input type="text" placeholder="&nbsp;&nbsp;&nbsp;输入关键词" class="search"/>
+            <form class="form clear">
+                <input type="text" placeholder="输入关键词" class="search"/>
+                <input type="button" class="submit" />
+            </form>
         </div>
     </div>
     <div class="header">
         <div class="container clear">
-            <img src="./banner2.png" class="banner2">
+            <div class="banner">
+                <ul>
+                	<li class="banner2">
+                		
+                
+          
+                	</li>
+                </ul>
+            </div>
             <div class="qianduan">
                 <ul class="nav2">
                     <li><a href="#">前端开发<span class="jiantou">></span></a></li>
