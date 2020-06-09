@@ -1,0 +1,523 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+        	margin:0;
+        	padding:0;
+        }
+        a {
+        	text-decoration:none;
+        }
+        li {
+        	list-style:none;
+        }
+        .clear:after{
+        content:"";
+        height:0;
+        display:block;
+        clear:both;
+       }
+       .header-top{
+         height:90px;
+         background:white;
+       }
+       .container{
+        width:1200px;
+        margin:0 auto;
+        position:relative;
+       }
+       .container2{
+        width:960px;
+        margin:0 auto;
+        position:relative;
+       }
+       .logo{
+        padding-top:25px;
+        padding-right:90px;
+        float:left;
+       }
+       .nav1{
+        float:left;
+        margin-top:40px;
+       }
+       .nav1 li{
+       float:left;
+       }
+       .nav1 a{
+       display:inline-block;
+       width:100px;
+       line-height:18px;
+       color:black;
+       text-align:center;
+       font-size:18px;
+       padding-bottom:18px;
+       }
+       .nav1 a:hover{
+        color:red;
+        border-bottom:3px solid red;
+       }
+       .form{
+        float:right;
+        margin-top:30px;
+        margin-right:31px;
+       }
+       .search{
+        width:325px;
+        height:40px;
+        border:1px solid red;
+        outline:1px solid red;
+        float:left;
+        padding:13px;
+       }
+       .submit{
+         vertical-align:bottom;
+         float:left;
+         width:40px;
+         height:40px;
+         background:red url(./fa-search.png) no-repeat center center;
+         border:none;
+         outline:1px solid red;
+       }
+       .geren{
+       font-size:15px;
+       color:black;
+       float:right;
+       margin-top:40px;
+       padding-right:10px;
+       }
+       .geren:hover{
+        color:red;
+       }
+       .header{
+        height:700px;
+        background:red;
+        position:relative;
+       }
+       .banner{
+        height:700px;
+        position:relative;
+       }
+       .banner li{
+        width:1200px;
+        height:700px;
+        position:absolute;
+        top:0;
+        left:0;
+       }
+       .banner1{
+        background:url(http://f2.cri.cn/M00/2B/1B/CqgNOlncjSiAScvbAAAAAAAAAAA1499164.banner.jpg) no-repeat center center;
+       }
+       .banner2{
+        background:url(./banner3.png) no-repeat center center;
+       }
+       .header-bottom{
+        width:1200px;
+        height:60px;
+        background:white;
+        margin:0 auto;
+       }
+       .denglu{
+        width:260px;
+        height:200px;
+        border:1px solid red;
+        margin-top:30px;
+        padding-top:20px;
+        background-color:white;
+       }
+       .denglu span{
+         color:red;
+       }
+       .denglu p{
+        color:red;
+        text-align:center;
+       }
+       .denglu input.name:focus{
+        outline:2px solid red;
+       }
+       .denglu input.pass:focus{
+        outline:2px solid red;
+       }
+       .pass{
+        margin-left:8px;
+       }
+       .button{
+        margin-top:10px;
+        margin-left:70px;
+       }
+       .jingpin{
+        width:130px;
+        text-align:center;
+        font-size:18px;
+        font-weight:bold;
+        line-height:18px;
+        display:inline-block;
+        float:left;
+        padding-top:21px;
+        margin-left:300px;
+       }
+       .jingpin a{
+        color:red;
+       }
+       .nav2{
+        float:left;
+       }
+       .nav2 li{
+        width:130px;
+        height:16px;
+        float:left;
+        text-align:center;
+        border-left:1px solid red;
+        font-size:16px;
+        display:inline-block;
+        margin-top:21px;
+        }
+       .nav2 a{
+        color:black;
+       }
+       .nav2 a:hover{
+        color:red;
+       }
+       .tuijian{
+        font-size:20px;
+        font-weight:bold;
+        float:left;
+        display:inline-block;
+        padding-top:37px;
+        padding-bottom:21px;
+        margin-right:291px;
+       }
+       .tuijian a{
+        color:red;
+       }
+       .quanbu{
+       font-size:12px;
+       padding-top:44px;
+       float:right;
+       padding-right:31px;
+       display:inline-block;
+       }
+       .quanbu a{
+        color:grey;
+       }
+       .quanbu a:hover{
+        color:red;
+       }
+      .nav3{
+        float:left;
+      }
+      .nav3 li{
+        width:228px;
+        height:270px;
+        background:white;
+        box-shadow:0px 5px 5px 0px rgba(118,118,118,0.8);
+        position:relative;
+        float:left;
+      }
+      .picture{
+        position:absolute;
+        top:0px;
+        left:0px;
+        width:228px;
+        height:155px;
+      }
+      .wenzi{
+        width:190px;
+        height:34px;
+        font-size:14px;
+        color:black;
+        line-height:20px;
+        position:absolute;
+        top:179px;
+        left:23px;
+      }
+      .hui{
+        color:grey;
+        font-size:12px;
+        position:absolute;
+        bottom:15px;
+        left:60px;
+      }
+      .product1{
+        margin-bottom:15px;
+      }
+      .product2{
+        margin-bottom:15px;
+        margin-left:15px;
+      }
+      .product3{
+         margin-left:15px;
+      }
+      .nav4{
+        float:left;
+      }
+      .kangyibox1{
+       width:228px;
+       height:320px;
+       position:relative;
+       float:left;
+       margin-bottom:73px;
+       background-color:#F3F5F7;
+       box-shadow:0px 5px 5px 0px rgba(118,118,118,0.7)
+      }
+      .kangyibox2{
+       width:228px;
+       height:320px;
+       position:relative;
+       float:left;
+       margin-left:15px;
+       margin-bottom:73px;
+       background-color:#F3F5F7;
+       box-shadow:0px 5px 5px 0px rgba(118,118,118,0.7)
+    }
+      .kangyipicture{
+       position:absolute;
+       top:0px;
+       left:0px;
+       right:0px;
+       width:228px;
+       height:320px;
+    }
+    .jieshao{
+       width:228px;
+       height:122px;
+       background-color:black;
+       opacity:0.5;
+       position:absolute;
+       bottom:0px;
+       left:0px;
+       right:0px;
+    }
+    .shuoming{
+      width:175px;
+      height:53px;
+      font-size:18px;
+      font-weight:bold;
+      color:white;
+      line-height:20px;
+      position:absolute;
+      top:239px;
+      left:25px;
+    }
+    .bottom{
+      height:220px;
+      background-color:red;
+      position:relative;
+    }
+    .nav5{
+      float:left;
+      padding-left:240px;
+      margin-bottom:20px;
+    }
+    .nav5 li.qian{
+      width:80px;
+      height:30px;
+      font-size:16px;
+      line-height:30px;
+      text-align:center;
+      color:white;
+      float:left;
+      border-right:1px solid white;
+    }
+    .nav5 li.xin{
+      width:80px;
+      height:30px;
+      font-size:16px;
+      line-height:30px;
+      text-align:center;
+      font-weight:bold;
+      color:white;
+      float:left;
+      border-right:1px solid white;
+    }
+    .nav5 li.hou{
+      width:80px;
+      height:30px;
+      font-size:16px;
+      line-height:30px;
+      text-align:center;
+      color:white;
+      float:left;
+    }
+    .nav5 a{
+      color:white;
+    }
+    .nav6{
+        float:left;
+        padding-left:390px;
+    }
+    .nav6 li.qian{
+      width:80px;
+      height:30px;
+      font-size:16px;
+      line-height:30px;
+      text-align:center;
+      color:white;
+      float:left;
+      border-right:1px solid white;
+    }
+    .nav6 a{
+        color:white;
+    }
+    .nav6 li.hou{
+      width:80px;
+      height:30px;
+      font-size:16px;
+      line-height:30px;
+      text-align:center;
+      color:white;
+      float:left;
+    }
+    .banquan{
+        color:white;
+        font-size:16px;
+        text-align:center;
+        line-height:140px;
+    }
+    .dianhua{
+        color:white;
+        font-size:16px;
+        position:absolute;
+        bottom:30px;
+        left:420px;
+    }
+    .erweima{
+        position:absolute;
+        right:30px;
+        bottom:30px;
+    }
+    .kehu{
+        position:absolute;
+        font-size:12px;
+        bottom:120px;
+        right:20px;
+        color:white;
+    }
+    </style>
+</head>
+<body>
+    <div class="header-top">
+        <div class="container clear">
+            <img src="./logo.jpg" class="logo">
+            <ul class="nav1">
+                <li><a href="#" >首页</a></li>
+                <li><a href="#" >国内新闻</a></li>
+                <li><a href="#" >国际新闻</a></li>
+                <li><a href="#" >其他新闻</a></li>
+            </ul>
+            <a href="#" class="geren">账户中心</a>
+            <form class="form clear">
+                <input type="text" placeholder="请输入关键词" class="search"/>
+                <input type="button" class="submit" />
+            </form>
+        </div>
+    </div>
+    <div class="header">
+        <div class="container clear">
+            <div class="banner">
+                <ul>
+                    <li class="banner1"></li>
+                    <li class="banner2"></li>
+                </ul>
+            </div>
+        </div>
+            <div class="denglu">
+                <form> 
+                    <p><strong>用户请登录</strong></p>
+                    <span>用户名：</span><input type = "text" name = "myName" class="name"/> 
+                    <br/>
+                    <span class="pass">密码：</span><input type = "password" name = "pass" class="pass"/> 
+                    <br/>
+                    <input type="button" value="登录" name="submit" class="button" />
+                    <br/>
+                    <span class="pass">没有账号？点击下面按钮进行注册</span>
+                    <br/>
+                    <input type="button" value="注册" name="submit" class="button" />
+                </form>
+            </div>
+    </div>
+    <div class="header-bottom clear">
+        <p class="jingpin"><a href="#">热点新闻</a></p>
+        <ul class="nav2">
+            <li><a href="#">国内热点</a></li>
+            <li><a href="#">国际热点</a></li>
+            <li><a href="#">其他热点</a></li>
+        </ul>
+    </div>
+    <div class="container2 clear">
+        <p class="tuijian"><a href="#">国内热点</a></p>
+            <p class="quanbu"><a href="#">查看全部</a></p>
+            <ul class="nav3">
+                <li class="product1"><img src="./guonei1.jpg" class="picture"><p class="wenzi">中国答卷！3.7万字重磅白皮书发布</p><p class="hui">5.7万人阅读过</p></li>
+                <li class="product2"><img src="./guonei2.jpeg" class="picture"><p class="wenzi">2019年国家食品安全监督抽检合格率97.6% 不合格食品行政处罚5214件</p><p class="hui">3.1万人阅读过</p></li>
+                <li class="product2"><img src="./guonei3.jpg" class="picture"><p class="wenzi">首次特邀！国家大剧院邀130多名抗疫一线工作人员观演</p><p class="hui">5.4万人阅读过</p></li>
+                <li class="product2"><img src="./guonei4.jpg" class="picture"><p class="wenzi">抢收小麦 颗粒归仓</p><p class="hui">2.2万人阅读过</p></li>
+                <li><img src="./guonei5.jpg" class="picture"><p class="wenzi">湖南操场埋尸案邓世平工伤被认定，获补助金88万</p><p class="hui">8.4万人阅读过</p></li>
+                <li class="product3"><img src="./guonei6.jpg" class="picture"><p class="wenzi">三位部级官员回应三位外媒记者的三个质疑</p><p class="hui">3万人阅读过</p></li>
+                <li class="product3"><img src="./guonei7.jpeg" class="picture"><p class="wenzi">湖南江华遭50年一遇暴雨袭击，造成1死4失联</p><p class="hui">6.5万人阅读过</p></li>
+                <li class="product3"><img src="./guonei8.jpeg" class="picture"><p class="wenzi">高雄挺韩“议长”跳楼身亡 与妻子最后对话曝光</p><p class="hui">4.1万人阅读过</p></li>
+            </ul>
+            <p class="tuijian"><a href="#">国际热点</a></p>
+            <p class="quanbu"><a href="#">查看全部</a></p>
+            <ul class="nav3">
+                <li class="product1"><img src="./guoji1.jpeg" class="picture"><p class="wenzi">特朗普：已下令国民警卫队撤离华盛顿 但仍可随时召回</p><p class="hui">7.3万人阅读过</p></li>
+                <li class="product2"><img src="./guoji2.png" class="picture"><p class="wenzi">俄地方官员汇报图书馆修建情况，普京当场反问“资金去向”</p><p class="hui">3.5万人阅读过</p></li>
+                <li class="product2"><img src="./guoji3.jpg" class="picture"><p class="wenzi">英法德日等多国民众示威游行 高喊我不能呼吸</p><p class="hui">4.6万人阅读过</p></li>
+                <li class="product2"><img src="./guoji4.jpg" class="picture"><p class="wenzi">马来西亚宣布进一步放宽疫情管控措施</p><p class="hui">1.5万人阅读过</p></li>
+                <li><img src="./guoji5.png" class="picture"><p class="wenzi">印度！张文宏最怕的事情还是发生了</p><p class="hui">5.5万人阅读过</p></li>
+                <li class="product3"><img src="./guoji6.jpg" class="picture"><p class="wenzi">朝鲜劳动党举行第七届中央委员会第十三次政治局会议</p><p class="hui">4.3万人阅读过</p></li>
+                <li class="product3"><img src="./guoji7.jpg" class="picture"><p class="wenzi">疫情趋缓 泰国清迈周末夜市重新开放</p></li>
+                <li class="product3"><img src="./guoji8.jpg" class="picture"><p class="wenzi">黑人议员称“华人不需要钱” 遭美网友炮轰种族主义</p><p class="hui">6.1万人阅读过</p></li>
+            </ul>
+            <p class="tuijian"><a href="#">其他热点</a></p>
+            <p class="quanbu"><a href="#">查看全部</a></p>
+            <ul class="nav3">
+                <li class="product1"><img src="./qita1.png" class="picture"><p class="wenzi">京东全球发售1.33亿股 在香港上限定价236港元</p><p class="hui">2.5万人阅读过</p></li>
+                <li class="product2"><img src="./qita2.jpg" class="picture"><p class="wenzi">经济学人》：金融市场与实体经济之间的危险鸿沟</p><p class="hui">1.3万人阅读过</p></li>
+                <li class="product2"><img src="./qita3.jpg" class="picture"><p class="wenzi">毒液！美军F16新涂装版终于起飞了</p><p class="hui">4.8万人阅读过</p></li>
+                <li class="product2"><img src="./qita4.jpg" class="picture"><p class="wenzi">风驰电掣！96A主战坦克越野训练</p><p class="hui">3.1万人阅读过</p></li>
+                <li><img src="./qita5.jpeg" class="picture"><p class="wenzi">Together 2020：华为P40手机发布背后的HMS野望</p><p class="hui">1.4万人阅读过</p></li>
+                <li class="product3"><img src="./qita6.png" class="picture"><p class="wenzi">FreeVOOC隔空充电系统正式公布，可实现10米内稳定充电</p><p class="hui">2万人阅读过</p></li>
+                <li class="product3"><img src="./qita7.jpeg" class="picture"><p class="wenzi">全方位适合年轻人的佳作 试驾高颜值SUV凯翼炫界</p><p class="hui">1.2万人阅读过</p></li>
+                <li class="product3"><img src="./qita8.jpeg" class="picture"><p class="wenzi">丰田又一力作！1.5L混动+CVT+四驱，看完就想买！</p><p class="hui">1.4万人阅读过</p></li>
+            </ul>   
+            <p class="tuijian"><a href="#">疫情相关</a></p>
+            <p class="quanbu"><a href="#">查看全部</a></p>
+            <ul class="nav4">
+                <li class="kangyibox1"><img src="./kangyi1.jpg" class="kangyipicture"><div class="jieshao"></div><p class="shuoming">新型冠状病毒肺炎疫情实时大数据报告</p></li>
+                <li class="kangyibox2"><img src="./kangyi.jpg" class="kangyipicture"><div class="jieshao"></div><p class="shuoming">2020中国抗疫记</p></li>
+                <li class="kangyibox2"><img src="./kangyi2.jpg" class="kangyipicture"><div class="jieshao"></div><p class="shuoming">战斗在防疫最前沿</p></li>
+                <li class="kangyibox2"><img src="./kangyi3.jpg" class="kangyipicture"><div class="jieshao"></div><p class="shuoming">落实全国两会精神，织牢织密公共卫生防护网</p></li>
+            </ul>
+    </div>
+    <div class="bottom">
+        <div class="container clear">
+            <ul class="nav5">
+                <li class="xin">新闻</li>
+                <li class="qian"><a href="#" >国内</a></li>
+                <li class="qian"><a href="#">国际</a></li>
+                <li class="qian"><a href="#">军事</a></li>
+                <li class="qian"><a href="#">财经</a></li>
+                <li class="qian"><a href="#">娱乐</a></li>
+                <li class="qian"><a href="#">体育</a></li>
+                <li class="qian"><a href="#">科技</a></li>
+                <li class="qian"><a href="#">汽车</a></li>
+                <li class="hou"><a href="#">房产</a></li>
+            </ul>
+            <ul class="nav6">
+                <li class="qian"><a href="#">关于我们</a></li>
+                <li class="qian"><a href="#">联系我们</a></li>
+                <li class="qian"><a href="#">广告服务</a></li>
+                <li class="qian"><a href="#">供稿服务</a></li>
+                <li class="qian"><a href="#">招聘信息</a></li>
+                <li class="hou"><a href="#">法律声明</a></li>
+            </ul>
+        </div>
+        <p class="banquan">[网上传播视听节目许可证（0106168)] [京ICP证040655号] [京公网安备 11000002003042号] [京ICP备05004340号-1]</p>
+        <p class="dianhua">违法和不良信息举报电话：15699788000 举报邮箱：jubao@chinanews.com.cn</p>
+        <p class="kehu">扫描二维码，下载客户端</p>
+        <img src="./erweima.jpg" class="erweima">
+    </div>
+</body>
+</html>
