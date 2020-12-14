@@ -4,14 +4,14 @@
     <title>Document</title>
     <style>
         * {
-        	margin:0;
-        	padding:0;
+            margin:0;
+            padding:0;
         }
         a {
-        	text-decoration:none;
+            text-decoration:none;
         }
         li {
-        	list-style:none;
+            list-style:none;
         }
         .clear:after{
         content:"";
@@ -425,7 +425,7 @@
         font-size:16px;
         position:absolute;
         bottom:30px;
-        left:420px;
+        left:520px;
     }
     .erweima{
         position:absolute;
@@ -438,6 +438,13 @@
         bottom:120px;
         right:20px;
         color:white;
+    }
+    #pingjia{
+        width:75px;
+        height:45px;
+        position:absolute;
+        bottom:30px;
+        right:250px;
     }
     </style>
 </head>
@@ -552,6 +559,7 @@
         <p class="dianhua">违法和不良信息举报电话：15699788000 举报邮箱：jubao@chinanews.com.cn</p>
         <p class="kehu">扫描二维码，下载客户端</p>
         <img src="./erweima.jpg" class="erweima">
+        <button id="pingjia">评价此网页</button>
     </div>
 </body>
 <script>
@@ -587,6 +595,14 @@
     kangyibox4.onclick=function(){
         tishi2.innerHTML="落实全国两会精神，织牢织密公共卫生防护网<br/>&bull;<a href='#'>谋划新局再出发：建立“医防协同、平战结合”机制体系</a><br/>&bull;<a href='#'>“人财物”调配升级：补齐短板让基层成为公共卫生的坚强堡垒</a><br/>&bull;<a href='#'>全面提升科技抗疫硬实力：慎终如始打好疫情防控阻击战</a><br/>";
     }
+    var pingjia=document.getElementById("pingjia");
+    pingjia.onclick=function(){
+        var pj=window.prompt("请留下您宝贵的评价");
+        if(pj!=""){
+            alert("感谢您留下宝贵的评价");
+            window.location.href="https://yuyuyuyu178.github.io/zuoye/index3.html"
+        }
+    }
     var header=document.getElementById("header");
     var banner=document.getElementById("banner");
     var left=document.getElementById("left1");
@@ -599,7 +615,7 @@
     }
     function next(){
         var new1;
-        if(banner.style.left==="-4800px"){
+        if(banner.style.left=="-4800px"){
             new1=-2400;
         }else{
             new1=parseInt(banner.style.left)-1200;
@@ -608,7 +624,7 @@
     }
     function prev(){
         var new1;
-        if(banner.style.left==="0px"){
+        if(banner.style.left=="0px"){
             new1=-2400;
         }else{
             new1=parseInt(banner.style.left)+1200;
