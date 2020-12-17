@@ -1,3 +1,4 @@
+
 <html>
 <head>
     <meta charset="UTF-8">
@@ -576,6 +577,12 @@
     setTimeout(function(){
         window.location.href="https://www.chinanews.com/";
     },60000);
+    var a=document.getElementsByTagName("a");
+    for(var i=0;i<a.length;i++){
+        a[i].onclick=function(){
+            alert("页面正在维护中");
+        }
+    }
     var kangyibox1=document.getElementById("kangyibox1");
     var kangyibox2=document.getElementById("kangyibox2");
     var tishi2=document.getElementById("tishi2");
