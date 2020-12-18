@@ -447,6 +447,13 @@
         bottom:30px;
         right:250px;
     }
+    #mousebox{
+        width:65px;
+        height:30px;
+        background:red;
+        position:absolute;
+        color:white;
+    }
     </style>
 </head>
 <body>
@@ -562,6 +569,7 @@
         <img src="./erweima.jpg" class="erweima">
         <button id="pingjia">评价此网页</button>
     </div>
+    <div id="mousebox">中国新闻</div>
 </body>
 <script>
     var time=60;
@@ -650,6 +658,17 @@
     }
     header.onmouseleave=function () {
         auto();    
+    }
+    var mousebox=document.getElementById("mousebox");
+        document.onmousemove=function(){
+        var event1=window.event;
+        mousebox.style.top=event1.pageY+15+"px";
+        mousebox.style.left=event1.pageX+15+"px";
+        if(event1.pageY>145&&event1.pageY<905){
+            mousebox.style.display="none";
+        }else{
+            mousebox.style.display="block";
+        }
     }
 </script>
 </html>
